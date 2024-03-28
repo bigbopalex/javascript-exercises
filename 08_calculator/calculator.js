@@ -7,19 +7,11 @@ const subtract = function(numA, numB) {
 };
 
 const sum = function(numArr) {
-  let total = 0;
-	for (num of numArr){
-    total += num;
-  }
-  return total;
+  return numArr.reduce((total, current) => total += current, 0);
 };
 
 const multiply = function(numArr) {
-  let total = 1;
-	for (num of numArr){
-    total *= num;
-  }
-  return total;
+  return numArr.reduce((total, current) => total *= current, 1);
 };
 
 const power = function(numA, numB) {
